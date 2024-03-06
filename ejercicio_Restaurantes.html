@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let restaurante1 = "Hamburgueseria"
+        let restaurante2 = "Pizzeria"
+        let restaurante3 = "Comida china"
+
+        let hamburguesa_Simple =  25000
+        let hamburguesa_Especial = 50000
+
+        let pizza_Familiar = 85000
+        let pizza_Porcion =  15000
+
+        let fideos = 18000
+        let arrroz_Chino =  25000
+
+        let restaurante = parseInt(prompt(`Elija el restaurante que desee: \n 1. ${restaurante1} \n 2. ${restaurante2} \n 3. ${restaurante3} `))
+
+        if(restaurante == 1){
+           restaurante = restaurante1
+        }
+        
+        else if (restaurante == 2){
+           restaurante = restaurante2
+        }
+
+        else if (restaurante == 3){
+           restaurante = restaurante3
+        }
+        
+        else("Opcion de restaurante no disponible")
+
+        if(restaurante == restaurante1){
+            let comida = parseInt(prompt(`Elija algo que desee del menu: \n 1. Hamburguesa simple   precio:  ${hamburguesa_Simple} \n 2. Hamburguesa especial       precio: ${hamburguesa_Especial} `))
+            if(comida == 1){
+                let cantidad = parseInt(prompt("Indique la cantidad que desee comprar: "))
+                let total = cantidad * hamburguesa_Simple
+                if (total > 23000){
+                    alert(`El total por su compra de ${cantidad} hamburguesas simples es de:  ` + (total + (5000)) + " con un valor agregado de 5000 pesos por domicilio")
+                    alert("Gracias por su compra el pedido llegara en 1 hora o 45 minutos")
+                }
+            }
+            else if(comida == 2){
+                let cantidad = parseInt(prompt("Indique la cantidad que desee comprar: "))
+                let total = cantidad * hamburguesa_Especial
+                if (total > 23000){
+                    alert(`El total por su compra de ${cantidad} hamburguesas especiales es de:  ` + (total + (5000)) + " con un valor agregado de 5000 pesos por domicilio")
+                    alert("Gracias por su compra el pedido llegara en 1 hora o 45 minutos")
+                }
+            }
+        }
+
+
+
+        if(restaurante == restaurante2){
+            let comida = parseInt(prompt(`Elija algo que desee del menu: \n 1. Pizza familiar   precio:  ${pizza_Familiar} \n 2. Porcion de pizza       precio: ${pizza_Porcion} `))
+            if(comida == 1){
+                let cantidad = parseInt(prompt("Indique la cantidad que desee comprar: "))
+                let total = cantidad * pizza_Familiar
+                if (total > 23000){
+                    alert(`El total por su compra de ${cantidad} Pizza familiar es de:  ` + (total + (5000)) + " con un valor agregado de 5000 pesos por domicilio")
+                    alert("Gracias por su compra el pedido llegara en 1 hora o 45 minutos")
+                }
+            }
+
+            else if(comida == 2){
+                let cantidad = parseInt(prompt("Indique la cantidad que desee comprar: "))
+                let total = cantidad * pizza_Porcion
+                if (total >= 23000){
+                    alert(`El total por su compra de ${cantidad} porcion de pizza es de:  ` + (total + (5000)) + " con un valor agregado de 5000 pesos por domicilio")
+                    alert("Gracias por su compra el pedido llegara en 1 hora o 45 minutos")
+                }
+                else alert("Su compra debe de ser de minimo 23000 pesos")
+            }
+        }
+
+        
+        if(restaurante == restaurante3){
+            let comida = parseInt(prompt(`Elija algo que desee del menu: \n 1. Fideos   precio:  ${fideos} \n 2. Arroz chino      precio: ${arrroz_Chino} `))
+            if(comida == 1){
+                let cantidad = parseInt(prompt("Indique la cantidad que desee comprar: "))
+                let total = cantidad * fideos
+                if (total > 23000){
+                    alert(`El total por su compra de ${cantidad} fideos es de:  ` + (total + (5000)) + " con un valor agregado de 5000 pesos por domicilio")
+                    alert("Gracias por su compra el pedido llegara en 1 hora o 45 minutos")
+                }
+                else alert("Su compra debe de ser de minimo 23000 pesos")
+            }
+
+            else if(comida == 2){
+                let cantidad = parseInt(prompt("Indique la cantidad que desee comprar: "))
+                let total = cantidad * arrroz_Chino
+                if (total >= 23000){
+                    alert(`El total por su compra de ${cantidad} Arroz chino es de:  ` + (total + (5000)) + " con un valor agregado de 5000 pesos por domicilio")
+                    alert("Gracias por su compra el pedido llegara en 1 hora o 45 minutos")
+                }
+                else alert("Su compra debe de ser de minimo 23000 pesos")
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+        
+      
+
+
+
+            
+
+
+        
+
+       
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

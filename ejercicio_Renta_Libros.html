@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>  
+    //    ejercicio renta de libros
+                let categoria1 = "Bestsellers" // el dia a 500
+                let categoria2 = "Literatura" // el dia a 100
+                let categoria3 = "Academicos" // gratuitos
+
+                let pedido = parseInt(prompt(` Ingrese la categoria del libro que desee: \n 1. ${categoria1} \n 2. ${categoria2} \n 3. ${categoria3}`))
+                if (pedido == 1){
+                    pedido = categoria1
+                }
+
+                else if (pedido == 2){
+                    pedido = categoria2
+                }
+
+                else if(pedido == 3){
+                    pedido = categoria3
+                }
+                else{
+                    alert("La categoria que ingreso no esta en la lista, intente nuevamente")
+                }
+
+                let prestamo = parseInt(prompt(`Ingrese los dias de uso y recuerde que el tiempo maximo del prestamo es de 30 dias : \n 1. ${categoria1} 500$ el dia \n 2. ${categoria2} 100$ el dia \n 3. Los libros ${categoria3} son gratuitos`))
+                
+                if ( pedido == categoria1 && prestamo >= 10 && prestamo <= 30 ) {
+                         alert("El valor total por el prestamos es de:  " + (prestamo*500-(0.1*(prestamo*500))) + " pesos con un descuento del 10%")
+                         alert("Gracias por la compra y recuerde devolver el libro")
+                }
+
+                else if (pedido == categoria1 && prestamo >= 1 && prestamo <= 30) {
+                         alert("El valor total por el prestamos es de: " + prestamo*500 + " pesos")
+                         alert("Gracias por la compra y recuerde devolver el libro")
+                }
+
+               
+
+               else if ( pedido == categoria2 && prestamo >= 10 && prestamo <= 30 ) {
+                         alert("El valor total por el prestamos es de:  " + (prestamo*100-(0.1*(prestamo*100))) + " pesos con un descuento del 10%")
+                         alert("Gracias por la compra y recuerde devolver el libro")
+                }
+                
+                
+                else if ( pedido == categoria2 && prestamo >= 1 && prestamo <= 30 ) {
+                         alert("El valor total por el prestamos es de:  " + prestamo*100 + " pesos")
+                         alert("Gracias por la compra y recuerde devolver el libro")
+                }
+
+                else if ( pedido == categoria3 && prestamo >= 1 && prestamo <= 30 ) {
+                         alert("El valor total por el prestamos es gratuito :D ")
+                         alert("Gracias por la compra y recuerde devolver el libro")
+                }
+
+
+
+
+                else alert("Los dias que ingreso no son permitidos")
+
+    
+    
+    
+    
+    </script>
+</body>
+</html>
+                

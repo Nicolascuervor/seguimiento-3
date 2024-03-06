@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+ // EJERCICIOS ESCOBAS
+
+            let modelo1 = "Escoba dura"
+            let modelo2 = "Escoba suave"
+            let modelo3 = "cepillo"
+
+            let material1 = "cerda sintetica"
+            let material2 = "cerda natural"
+
+            let adicion1 = "Gancho en la punta" //500$
+            let adicion2 = "Palo mas largo"     //2000$
+            
+            let opcion = parseInt(prompt("Elija un modelo de escoba: \n 1. Escoba dura \n 2. Escoba suave \n 3. Cepillo"))
+
+            if(opcion == 1){
+                opcion = modelo1
+            }
+            else if(opcion == 2){
+                opcion = modelo2
+            }
+            else if(opcion == 3){
+                opcion = modelo3
+            }
+            else alert("Los datos que ingreso son invalidos, repita el proceso nuevamente")
+
+
+            let material = parseInt(prompt("Elija el material de las cerdas: \n 1. Cerda sintetica \n 2. cerda natural"))
+
+            if (material == 1){
+                material = material1
+            }
+
+            else if (material == 2){
+                material = material2
+            }
+            else alert("Los datos que ingreso son invalidos, repita el proceso nuevamente")
+
+
+            let adicional = parseInt(prompt("Elija una adicion: \n 1. Gancho en la punta \n 2. Palo mas largo"))
+
+            if (adicional == 1){
+                adicional = adicion1
+            }
+
+            else if (adicional == 2){
+               adicional = adicion2
+            }
+            else alert("Los datos que ingreso son invalidos, repita el proceso nuevamente")
+
+            let cantidad = parseInt(prompt("Elija la cantidad de escobas que desee comprar,(Recuerde que solo se permiten comprar minimo 3 escobas y max 30)" ))
+            if (cantidad < 3 || cantidad > 30 ) {
+                alert("los datos que ingreso son invalidos")
+            }
+
+            if (opcion == modelo1 && material == material1 && adicional ==adicion1 && cantidad >= 3 && cantidad <= 30 ){
+                    alert(`El valor total por ${opcion} con ${material} y una adicion de ${adicional} es de: `+ 8500 * cantidad + " pesos")
+            }
+            else if  (opcion == modelo1 && material == material1 && adicional ==adicion2 ){
+                    alert(`El valor total por ${opcion} con ${material} y una adicion de ${adicional} es de: ` + + 10000 * cantidad + " pesos")
+            }
+            else if  (opcion == modelo1 && material == material2 && adicional ==adicion1 ){
+                    alert(`El valor total por ${opcion} con ${material} y una adicion de ${adicional} es de: ` + 10500 * cantidad + " pesos")
+            }
+            else if  (opcion == modelo1 && material == material2 && adicional ==adicion2 ){
+                    alert(`El valor total por ${opcion} con ${material} y una adicion de ${adicional} es de: ` + 12000 * cantidad + " pesos")
+            }
+             // No se menciona nada del valor de la escoba suave entonces puse lo mismo 
+            if (opcion == modelo2 && material == material1 && adicional ==adicion1 && cantidad >= 3 && cantidad <= 30 ){
+                    alert(`El valor total por ${opcion} con ${material} y una adicion de ${adicional} es de: `+ 8500 * cantidad + " pesos")
+            }
+            else if  (opcion == modelo2 && material == material1 && adicional ==adicion2 ){
+                    alert(`El valor total por ${opcion} con ${material} y una adicion de ${adicional} es de: ` + + 10000 * cantidad + " pesos")
+            }
+            else if  (opcion == modelo2 && material == material2 && adicional ==adicion1 ){
+                    alert(`El valor total por ${opcion} con ${material} y una adicion de ${adicional} es de: ` + 10500 * cantidad + " pesos")
+            }
+            else if  (opcion == modelo2 && material == material2 && adicional ==adicion2 ){
+                    alert(`El valor total por ${opcion} con ${material} y una adicion de ${adicional} es de: ` + 12000 * cantidad + " pesos")
+            }
+           
+            if (opcion == modelo3 && material == material1 && adicional ==adicion1 ){
+                    alert(`El valor total por ${opcion} con ${material} y una adicion de ${adicional} es de: ` + 12500 * cantidad + " pesos" )
+            }
+       
+            else if  (opcion == modelo3 && material == material1 && adicional ==adicion2 ){
+                    alert(`El valor total por ${opcion} con ${material} y una adicion de ${adicional} es de: ` + 14000 * cantidad + " pesos")
+            }
+            else if  (opcion == modelo3 && material == material2 && adicional ==adicion1 ){
+                    alert(`El valor total por ${opcion} con ${material} y una adicion de ${adicional} es de: ` + 15000 * cantidad + " pesos")
+            }
+            else if  (opcion == modelo3 && material == material2 && adicional ==adicion2 ){
+                    alert(`El valor total por ${opcion} con ${material} y una adicion de ${adicional} es de: ` + 17000 * cantidad + " pesos")
+            }
+           
+
+
+
+
+    </script>
+</body>
+</html>

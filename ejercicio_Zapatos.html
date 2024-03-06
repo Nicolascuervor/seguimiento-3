@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         // EJERCICIO VENTA DE ZAPATOS
+        
+            const modelo1 = "clasicos"
+            const modelo2 = "running"
+            const modelo3 = "basket"
+
+            const clasicos_precio = 500000
+            const running = 800000
+            const basket = 1000000
+            let talla = 35-44
+
+            let pedido = prompt(`Elija el modelo de zapato que desee comprar. \n1. ${modelo1} ${clasicos_precio}$ \n2. ${modelo2} ${running}$ \n3. ${ modelo3} ${basket}$`)
+            
+            let talla_elegida = parseInt(prompt("elija una talla entre 35 y 44 disponibles "))
+                if (talla_elegida < 35 || talla_elegida > 44 ){
+                    alert("la talla no se encuentra disponible")
+                    
+            }
+
+           let cantidad = parseInt(prompt(`Ingrese la cantidad de pares ${pedido} que desee comprar `))
+
+           if (cantidad >= 3 && pedido == modelo1 ){
+                alert(`El presio total por comprar ${cantidad} pares ${pedido} con un 10% de decuento es de: `+ parseInt(cantidad*clasicos_precio - (0.1*(cantidad*clasicos_precio))))
+            }
+
+
+            else if (cantidad >= 3 && pedido == modelo2 ){
+                alert(`El presio total por comprar ${cantidad} pares ${pedido} con un 10% de decuento es de: `+ parseInt(cantidad*running - (0.1*(cantidad*running))))
+
+            }
+
+            else if (cantidad >= 3 && pedido == modelo3 ){
+                alert(`El presio total por comprar ${cantidad} pares ${pedido} con un 10% de decuento es de: `+  parseInt(cantidad*basket - (0.1*(cantidad*basket))))
+
+            }
+
+            else if (cantidad < 3 && pedido == modelo1 ){
+                alert(`El presio total por comprar ${cantidad} pares ${pedido} es de: `+ cantidad*clasicos_precio)
+
+            }
+            else if (cantidad < 3 && pedido == modelo2 ){
+                alert(`El presio total por comprar ${cantidad} pares ${pedido} es de: `+ cantidad*running)
+
+            }
+            else if (cantidad < 3 && pedido == modelo3){
+                alert(`El presio total por comprar ${cantidad} pares ${pedido} es de: `+ cantidad*basket)
+            }
+
+    </script>
+
+</body>
+</html>
