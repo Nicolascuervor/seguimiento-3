@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+ // EJERCICIO LAVANDERIA
+
+// EJERCICIO PAGO DE MATRICULA
+        
+                                                                
+        // const matricula = 7000000
+
+        // const opciones_pago = parseInt(prompt("Elija el metodo con el que desee paga su matricula \n(recuerde que son 7 millones) \n 1. pago completo (incluye 5% de descuento) \n 2. Pago a 2 cuotas. \n 3. Pago a 3 cuotas"))
+        
+        //     if(opciones_pago === 1 ){
+        //     alert("Usted a elegido hacer el pago completo.\nPor lo tanto el valor total de la maticula sera de 6650000$ con descuento agregado")
+        
+        // }
+        // else if (opciones_pago === 2){
+        //     alert("A elegido pagar a 2 cuotas por lo tanto en pago se dividira en 3500000$ ")
+        // }
+        // else if (opciones_pago === 3){
+        //     alert("A elegido hacer el pago a 3 cuotas por lo tanto el pago se dividira en 2333333$ en partes iguales")
+        // }
+
+        //     else{
+        //         alert("opcion ingresada invalida")
+        //     }
+        
+     
+                                                                  
+        // EJERCICIO VENTA DE ZAPATOS
+        
+        //     const modelo1 = "clasicos"
+        //     const modelo2 = "running"
+        //     const modelo3 = "basket"
+
+        //     const clasicos_precio = 500000
+        //     const running = 800000
+        //     const basket = 1000000
+        //     let talla = 35-44
+
+        //     let pedido = prompt(`Elija el modelo de zapato que desee comprar. \n1. ${modelo1} ${clasicos_precio}$ \n2. ${modelo2} ${running}$ \n3. ${ modelo3} ${basket}$`)
+            
+        //     let talla_elegida = parseInt(prompt("elija una talla entre 35 y 44 disponibles "))
+        //         if (talla_elegida < 35 || talla_elegida > 44 ){
+        //             alert("la talla no se encuentra disponible")
+                    
+        //     }
+
+        //    let cantidad = parseInt(prompt(`Ingrese la cantidad de pares ${pedido} que desee comprar `))
+
+        //    if (cantidad >= 3 && pedido == modelo1 ){
+        //         alert(`El presio total por comprar ${cantidad} pares ${pedido} con un 10% de decuento es de: `+ parseInt(cantidad*clasicos_precio - (0.1*(cantidad*clasicos_precio))))
+        //     }
+
+
+        //     else if (cantidad >= 3 && pedido == modelo2 ){
+        //         alert(`El presio total por comprar ${cantidad} pares ${pedido} con un 10% de decuento es de: `+ parseInt(cantidad*running - (0.1*(cantidad*running))))
+
+        //     }
+
+        //     else if (cantidad >= 3 && pedido == modelo3 ){
+        //         alert(`El presio total por comprar ${cantidad} pares ${pedido} con un 10% de decuento es de: `+  parseInt(cantidad*basket - (0.1*(cantidad*basket))))
+
+        //     }
+
+        //     else if (cantidad < 3 && pedido == modelo1 ){
+        //         alert(`El presio total por comprar ${cantidad} pares ${pedido} es de: `+ cantidad*clasicos_precio)
+
+        //     }
+        //     else if (cantidad < 3 && pedido == modelo2 ){
+        //         alert(`El presio total por comprar ${cantidad} pares ${pedido} es de: `+ cantidad*running)
+
+        //     }
+        //     else if (cantidad < 3 && pedido == modelo3){
+        //         alert(`El presio total por comprar ${cantidad} pares ${pedido} es de: `+ cantidad*basket)
+        //     }
+
+                                                                     // EJERCICIOS ESCOBAS
+
+            let modelo1 = "Escoba dura"
+            let modelo2 = "Escoba suave"
+            let modelo3 = "cepillo"
+
+            let material1 = "cerda sintetica"
+            let material2 = "cerda natural"
+
+            let adicion1 = "Gancho en la punta"
+            let adicion2 = "Palo mas largo"
+
+            let opcion = parseInt(prompt("Elija un modelo de escoba: \n 1. Escoba dura \n 2. Escoba suave \n 3. Cepillo"))
+
+            if(opcion == 1){
+                opcion = modelo1
+            }
+            else if(opcion == 2){
+                opcion = modelo2
+            }
+            else if(opcion == 3){
+                opcion = modelo3
+            }
+
+            let material = parseInt(prompt("Elija el material de las cerdas: \n 1. Cerda sintetica \n 2. cerda natural"))
+
+            if (material == 1){
+                material = material1
+            }
+
+            else if (material == 2){
+                material = material2
+            }
+
+            let adicional = parseInt(prompt("Elija una adicion: \n 1. Gancho en la punta \n 2. Palo mas largo"))
+
+            if (adicional == 1){
+                adicional = adicion1
+            }
+
+            else if (adicional == 2){
+               adicional = adicion2
+            }
+
+            if(modelo1 && material1 && adicion1 ){
+                let total = alert(`El valor total por ${opcion} con ${material} y una adicion de ${adicional} es de: 8500 pesos`)
+            }
+
+            else if(modelo1 && material1 && adicion2 ){
+                let total = alert(`El valor total por ${opcion} con ${material} y una adicion de ${adicional} es de: 10000 pesos`)
+            }
+
+
+           
+
+            // if(){
+
+            // }
+            
+
+
+           
+            
+
+
+        </script>
+     </body>
+     </html>
