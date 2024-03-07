@@ -7,6 +7,107 @@
 </head>
 <body>
     <script>
+         let pil1 = "Piloto A"
+        let pil2 = "Piloto B"
+        let pil3 = "Piloto C"
+
+        let desci1 = "Ganador de la carrera"
+        let desci2 = "Mayoria de puntos"
+
+        
+        let caja1 = [pil1,pil2,pil3]
+
+        let aleatoriedad = parseInt(Math.floor(Math.random()*caja1.length))
+
+        if(aleatoriedad == 0){
+            aleatoriedad = "Piloto A"
+        }
+
+        else if (aleatoriedad == 1){
+            aleatoriedad = "Piloto B"
+        }
+
+        else if (aleatoriedad == 2){
+            aleatoriedad = "Piloto C"
+        }
+
+        let caja2 = [desci1,desci2]
+
+        let aleatoriedad2 = Math.floor(Math.random()*caja2.length)
+          
+        if(aleatoriedad2 == 0){
+            aleatoriedad2 = "Ganador de la carrera"
+        }
+
+        else if (aleatoriedad2 == 1){
+            aleatoriedad2 = "Mayoria de puntos"
+        }
+       
+
+        let edad = parseInt(prompt("Antes de ingresar a la pagina digite su edad:  "))
+
+
+            if (edad >= 18){
+                let apuesta = parseInt(prompt("Elija el piloto disponible para apostar: \n 1. Piloto A (1.5) \n 2. Piloto B (2.3) \n 3. Piloto C (1.8) "))
+                if (apuesta == 1){
+                    apuesta = pil1
+                }
+                else if (apuesta == 2){
+                    apuesta = pil2
+                }
+                else if (apuesta == 3){
+                    apuesta = pil3
+                }
+                else alert("Datos erroneos ingesados, reinicie la pagina")
+
+                let decision = parseInt(prompt("Elija el metodo de apuesta: \n 1. Ganador de la carrera \n 2. Mayoria de puntos"))
+                if (decision == 1){
+                    decision = desci1
+                   
+                }
+                else if(decision == 2){
+                    decision = desci2
+                }
+                else alert("Datos erroneos ingesados, reinicie la pagina")
+
+                let dinero = parseInt(prompt("Ingrese el monto por su apuesta: \n Min 10000 \n max 1000000"))
+
+                if (apuesta == pil1 && decision == desci1 && aleatoriedad == pil1 && aleatoriedad2 == desci1 && dinero >= 10000 && dinero <= 1000000) {
+                    alert("Felicidades ha ganado la apuesta con un premio de: " + (dinero+(dinero*0.05)) + " pesos")
+                }
+                else if (apuesta == pil1 && decision == desci2 && aleatoriedad == pil1 && aleatoriedad2 == desci2 && dinero >= 10000 && dinero <= 1000000){
+                    alert("Felicidades ha ganado la apuesta con un premio de: " + (dinero+(dinero*0.05)) + " pesos")
+                }
+
+                else if (apuesta == pil2 && decision == desci1 && aleatoriedad == pil2 && aleatoriedad2 == desci1 && dinero >= 10000 && dinero <= 1000000){
+                    alert("Felicidades ha ganado la apuesta con un premio de: " + (dinero+(dinero*2 +(dinero*0.02))) + " pesos")
+                }
+                else if (apuesta == pil2 && decision == desci2 && aleatoriedad == pil2 && aleatoriedad2 == desci2 && dinero >= 10000 && dinero <= 1000000){
+                    alert("Felicidades ha ganado la apuesta con un premio de: " + (dinero+(dinero*2 +(dinero*0.02))) + " pesos")
+                }
+
+                else if (apuesta == pil3 && decision == desci1 && aleatoriedad == pil3 && aleatoriedad2 == desci1 && dinero >= 10000 && dinero <= 1000000){
+                    alert("Felicidades ha ganado la apuesta con un premio de: " + (dinero+(dinero*0.08)) + " pesos")
+                }
+                else if (apuesta == pil3 && decision == desci2 && aleatoriedad == pil3 && aleatoriedad2 == desci2 && dinero >= 10000 && dinero <= 1000000){
+                    alert("Felicidades ha ganado la apuesta con un premio de: " + (dinero+(dinero*0.08)) + " pesos")
+                }
+
+                else if((aleatoriedad == pil3 && aleatoriedad2 == desci2 >= 10000 && dinero <= 1000000)){
+
+                }
+                else if(dinero < 10000 || dinero > 1000000){
+                    alert("El dinero ingresado no esta permitido")
+                }
+                else
+
+                alert("Mala suerte ha perdido la apuesta y todo su dinero, vuelva a intentar")
+                alert(`El ganador fue ${aleatoriedad} con ${aleatoriedad2}`)
+
+
+            }
+            
+            else alert("Usted es menor de edad, no tiene permitido ingresar")
         
 
 
